@@ -7,7 +7,12 @@ WORKDIR /app
 # # Copy the application files into the working directory
 COPY . /app
 # # Install the application dependencies
-RUN npm install
+
+RUN npm config set registry npm config set registry https://registry.npmmirror.com
+
+RUN npm install cnpm -g
+
+RUN cnpm install
 
 # # Define the entry point for the container
 CMD ["node", "./app/app.js"]
