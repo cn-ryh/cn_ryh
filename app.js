@@ -16,7 +16,8 @@ app.all('*', function (req, res, next) {
 app.use(urlencoded({ extended: true }));
 app.use(json());
 
-app.post('/', (req, res) => {
+app.get('/', (req, res) => {
+    res.status(200).send("Welcome")
 })
 
 // 监听3000端口
