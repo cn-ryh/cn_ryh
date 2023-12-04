@@ -19,7 +19,10 @@ app.use(json());
 app.get('/', (req, res) => {
     res.status(200).send("Welcome")
 })
-
+app.get(`welcome`,(req,res)=>
+{
+    res.status(200).send("welcome");
+})
 // 监听3000端口
 let server = app.listen(3000)
 
