@@ -1,13 +1,4 @@
-data
 node_modules
-files
-testObj
-Datazips
-record
-problem
-backendData
-*.log
-*.json
 
 # local env files
 .env.local
