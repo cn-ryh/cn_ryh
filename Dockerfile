@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 # # Install the application dependencies
 
-RUN npm config set registry npm config set registry https://registry.npmmirror.com
+RUN npm config set registry https://registry.npmmirror.com
 
 RUN npm install cnpm -g
 
